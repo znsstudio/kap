@@ -14,8 +14,8 @@ import analytics from './analytics';
 import {applicationMenu, cogMenu} from './menus';
 
 const menubar = require('menubar')({
-  index: `file://${__dirname}/../renderer/views/main.html`,
-  icon: path.join(__dirname, '..', '..', 'static', 'menubarDefaultTemplate.png'),
+  index: `file://${__dirname}/main.html`,
+  icon: path.join(__dirname, '..', 'static', 'menubarDefaultTemplate.png'),
   width: 320,
   height: 500,
   preloadWindow: true,
@@ -173,14 +173,14 @@ function resetMainWindowShadow() {
 function resetTrayIcon() {
   appState = 'initial'; // if the icon is being reseted, we are not recording anymore
   shouldStopWhenTrayIsClicked = false;
-  tray.setImage(path.join(__dirname, '..', '..', 'static', 'menubarDefaultTemplate.png'));
+  tray.setImage(path.join(__dirname, '..', 'static', 'menubarDefaultTemplate.png'));
   menubar.setOption('alwaysOnTop', false);
   mainWindow.setAlwaysOnTop(false);
 }
 
 function setTrayStopIcon() {
   shouldStopWhenTrayIsClicked = true;
-  tray.setImage(path.join(__dirname, '..', '..', 'static', 'menubarStopTemplate.png'));
+  tray.setImage(path.join(__dirname, '..', 'static', 'menubarStopTemplate.png'));
 }
 
 // Open the Preferences Window

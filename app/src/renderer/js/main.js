@@ -16,6 +16,11 @@ import {handleTrafficLightsClicks, isVisible, disposeObservers} from '../js/util
 
 const aperture = require('aperture.js')();
 
+// webpack stuff
+/* eslint-disable import/no-unassigned-import */
+require('../css/main.css');
+/* eslint-enable import/no-unassigned-import */
+
 const {app} = remote;
 
 // observers that should be disposed when the window unloads

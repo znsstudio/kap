@@ -2,6 +2,11 @@ import {ipcRenderer} from 'electron';
 
 import {init as initErrorReporter} from '../../common/reporter';
 
+// webpack stuff
+/* eslint-disable import/no-unassigned-import */
+require('../css/main.css');
+/* eslint-enable import/no-unassigned-import */
+
 const arrows = {
   left: 37,
   up: 38,

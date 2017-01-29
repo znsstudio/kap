@@ -82,7 +82,7 @@ mixin range
     @param {string} name - Name of the stylesheet to fetch
     example: +stylesheet('cropper')
 mixin stylesheet(name)
-  link(href=`../css/${name}.css` rel='stylesheet')
+  link(href=`${name}.css` rel='stylesheet')
 
 //- **
     name: script
@@ -90,4 +90,4 @@ mixin stylesheet(name)
     @param {string} name - Name of the script to fetch
     example: +script('cropper')
 mixin script(name)
-  script(src=`../js/${name}.js`)
+  script(src=`${name}.js`)
